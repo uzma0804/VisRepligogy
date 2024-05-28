@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Import Vega, Vega-lite and Vega-embed-->  
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">   
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="template.css">
+
+    <title>Vis Repligogy Project Website</title>
+</head>
+
+<body>
+ <!-- Customizing the navigation bar -->
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0  fixed-top">
+
+ <!-- Adding the College name to the navigation bar -->
+        <a href="https://www.khoury.northeastern.edu" class="navbar-brand"><img src=logo.png style="width:180px;height:60px"/></a>
+
+ <!-- Adding navigation tab names to the navigation bar. This is done as an unordered list. Each list element is a navigation bar element. For each, I added an <a></a> tag which will be used to direct to the appropriate section on click. You can add new items incase you want to add a new section in your webpage by simply copy pasting one of the list items. Make sure to correctly link it to the section that it corresponds to.-->       
+        <div class="collapse navbar-collapse" id="navLinks">
+
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="#motivation" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#data" class="nav-link">Vis Repligogy Framework Models</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#fata" class="nav-link">Implementation Process</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#task" class="nav-link">Case Studies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#analysis" class="nav-link">Important Links</a>
+                </li>
+
+                <!--<li class="nav-item">
+                    <a href="#design" class="nav-link">Team & Contact</a>
+                </li> -->
+                 
+               
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- Section 1 -->    
+    <section class="container-fluid px-0 py-0" style="margin-top:150px">
+        <div>
+                  <h1 style="text-align:center; font-weight: bold;"> Vis Repligogy Framework </h1> 
+                  <h3 style="text-align:center; font-style: italic; font-size: 23px; margin-bottom:20px;"> Conduct replication studies within the classroom</h2>   
+                  <img style="display:block; margin-left:auto; margin-right:auto; width: 80%" src="teaser.jpg" alt="Optional project image"> 
+                  <p style="text-align: center;margin-top: 20px;">Proof-of-concept implementation of our Vis Repligogy Framework implemented with Model 2</p>  
+            </div>    
+    </section>
+    
+    <article>
+  
+        <hr class="sep-3" style="margin-top:50px; margin-bottom:40px;"/>
+         
+       </article>
+
+
+<!-- Section 2: About-->    
+
+        <section id="motivation" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0 30% 0 30%;">
+                 
+            <a href="https://event.sdu.dk/eurovis/education-papers"><p class="borderr" style="color:#1c1717;  margin-top:20px;background-color:white; font-size:1.3em; text-align:center; border:5px double #2d3030; padding:0 6px; margin:5px;">EUROVIS 2024 Education Track</p></a>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <p class="h1" style="color:#1b1e1e; margin-top:1px;background-color:white; text-align: center;margin-left:50px; margin-right:50px;margin-top: 40px;">Vis Repligogy: Towards a Culture of Facilitating Replication Studies in Visualization Pedagogy and Research<br>
+<span class="author" style="font-size:0.6em; color: #1b1e1e ; font-style:oblique; opacity:95%"><a href="https://uzma0804.github.io/syeda/">Uzma Haque Syeda</a>, <a href="https://laurasouth.com/">Laura South</a>, <a href="https://www.khoury.northeastern.edu/people/justin-raynor/">Justin Raynor</a>, <a href="https://lpanavas.github.io/#/">Liudas Panavas</a>, <a href="https://vis.khoury.northeastern.edu/people/David-Saffo/">David Saffo</a>, <a href="">Thomas Morriss</a>, <a href="https://www.khoury.northeastern.edu/people/cody-dunne/">Cody Dunne</a>, and <a href="https://www.khoury.northeastern.edu/people/michelle-borkin/">Michelle A. Borkin</a></span>
+</br>
+    </p>
+</div>
+
+        <div>
+    
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:51.5%; text-align: justify;">Replication studies are crucial to strengthen the field of data visualization, to ensure its foundations are solid and methods accurate. Although visualization researchers acknowledge the epistemological significance of replications and its necessity to establish trust and reliability, the field has made little progress to support the publication of such studies and importantly provide methods to the community to encourage replications. In this paper, we contribute Vis Repligogy, a novel framework to systematically incorporate replications within visualization course curricula that not only teaches students replication and evaluation methodologies but also results in executed replication studies to validate prior work. To validate the feasibility of the framework, we present two case studies of two graduate data visualization courses that implemented the framework to result in a total of five replication studies. Finally, we reflect on our experience of implementing the Vis Repligogy framework to provide useful recommendations for future use of the framework. We envision this framework will encourage instructors to conduct replications in their courses and will help facilitate more replications in visualization pedagogy and research to support a culture shift towards reproducible research. </p>      
+        </div>    
+    </section>
+
+
+    <!-- Section 3: Vis Repligogy Framework-->  
+    <section id="data" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Vis Repligogy Framework </h2> 
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:51.5%; text-align: justify;">The Vis Repligogy framework can be used to incorporate replication studies within visualization course curricula. 
+
+                The framework has 4 implementation models that provide alternative different ways to conduct replications in the classroom. Depending on what the goal of the instructor is, they can choose the appropriate model to implement in their class.
+                
+                Model 1 is aims to conduct publishable quality replications in the classroom and therefore, has a longer preparation time pre-semester, a pilot and full study within the semester with reviewing and submitting for publication post-semester.
+                
+                Model 2 disseminates the replication study pilots and aims to run the full study post-semester for publication. Therefore, in this model, the post semester duration is longer compared to other models. 
+                
+                Model 3 and 4 can be run within a typical course duration. The former aims to disseminate the pilot studies but the later, that is model 4 does not aim to disseminate the pilot studies and is only aimed to practice replications in the class for the purpose of learning.
+            
+            </p>      
+        </div>
+        <div>
+            <img style="display:block; margin-left:auto; margin-right:auto; width: 60%; margin-top: 40px;" src="pic1.png" alt="Optional project image"> 
+        </div>
+    </section>
+
+        <section id="fata" class="container-fluid px-0" style="margin-top:50px"></section>
+
+        <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; margin-top: 60px; width:51.5%; text-align: justify;"> We also provide a detailed framework Implementation Process showing the step-by-step guideline to prepare to conduct replications in the class. 
+            This takes into account the level of the course and the students and suggests the most appropriate Vis Repligogy model for each combination. 
+            
+            It also guides the instructor on which method of paper selection is most appropriate for each model and provides a detailed checklist to refer to when choosing a paper to replicate based on the course’s objectives.  
+            It also provides useful considerations regarding IRB for each model and gives actionable tips to ensure the highest quality replications in the course.   
+            
+            The good quality replications conducted by students can be reviewed and then reported and disseminated by the instructor even if they are not published.  
+            
+            The aim of the Vis Repligogy framework is not to guide others in making more publishable replications, but to motivate them to start conducting replication studies in the first place. 
+             
+        </p>      
+    </div>
+    <div>
+        <img style="display:block; margin-left:auto; margin-right:auto; width: 60%; margin-top: 40px;" src="pic3.png" alt="Optional project image"> 
+    </div>
+
+    </section>
+
+
+
+
+    <!-- Section 4: Task Analysis -->  
+    <section id="task" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Case Studies </h2> 
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;">
+                In order to validate the Vis Repligogy framework, we successfully implemented the framework using Models 1 and 2 in two different advanced graduate data visualization courses.   
+                In both case study implementations,the papers selected for replication reinforced the courses’ learning objectives of introducing replications and the importance of open science and aligned with the expertise of the teaching staff and the students’ backgrounds. 
+                Both papers included data and procedures that were partially or fully unavailable which reinforced to students the importance of open science.</p>
+                </div>
+
+                <div>
+                    <h3  style="text-align:center; font-weight: bold;"> Case Study 1 </h3> 
+                    <img style="display:block; margin-left:auto; margin-right:auto; width: 60%; margin-top: 40px;" src="case1.jpg" alt="Optional project image">
+                    <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;">
+                        The Vis Repligogy framework was implemented in an advanced data visualization seminar course focused on evaluation studies in visualization research. The course, CS 7295 “Special Topics in Data Visualization: Evaluation Methodology, Techniques, and Applications”, was taught in Fall 2020. The student population (n=7) consisted of three novice and three advanced graduate students, and one advanced undergraduate student. Based on the course and student type, <b>Model 2</b> of the framework was selected. The replication study assignment was conducted in the first half of the semester, and the instructor selected
+                        the seminal “chartjunk” paper by Bateman et al. 2010 for the three student groups (n=3, n=2, and n=2) to closely replicate. This paper investigates the effects of visual embellishments on comprehension accuracy, memorability, and preference of charts. In Case Study 1, the instructor purposefully chose to have a paper
+                        with missing information in support of the course’s learning objectives
+                        including critical thinking and problem solving skills. For the second half of the semester, the instructor gave the students the option to either pick for themselves a published evaluation to replicate, or to design and execute a novel evaluation study. One student group (n=2) chose to design and run a novel conceptual replication of the Bateman et al. 2010 paper based on their interests and reflection of the lessons
+                        learned from the prior three replications conducted in the first half of the semester. The study conducted in the class was a pilot study for future post-semester follow-up work. Post-semester, six out of the seven
+                        students expanded the four pilot studies conducted in the course into four full replications with as many participants as the original study. The results of these studies validated the work by Bateman et al. 2010
+                        and provided further evidence that visual embellishments enhance memorability. These replication studies are currently being prepared for submission for publication in a peer reviewed journal.
+                        <br>
+                        <span>As the timelines and
+                        procedures for Models 2, 3, and 4 are almost identical with the exception
+                        of the final goal, we assert that this Case Study 1 implementation also
+                        provides validation for Models 3 and 4 of the framework</span>
+                    </p>
+
+                </div> 
+
+
+                <div>
+                    <h3  style="text-align:center; font-weight: bold;margin-top: 30px;"> Case Study 2 </h3> 
+                    <img style="display:block; margin-left:auto; margin-right:auto; width: 60%; margin-top: 10px;" src="case2.jpg" alt="Optional project image">
+                    <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;">
+                        The Vis Repligogy framework was implemented in another advanced data visualization course focused on advanced topics in visualization not included in the college’s standard introductory visualization course.
+                        Case Study 2 was conducted in CS 7375 “Seminar in Human-Computer Interaction: Advanced Topics in Data Visualization”, was taught in Fall 2023. The student population (n=10) consisted of eight novice and two
+                        advanced graduate students. Assessing the course and student type and goal for all student final project papers to lead to publications, <b>Model 1</b> of the Vis Repligogy framework was selected. In this course, students again worked in small groups and, unlike the previous case study, the course project was conducted over the full duration of the semester. Although the importance of replications and open science were part of the course curriculum, the completion of a replication study was not required but rather one option to satisfy the final project requirement. The other two project options were to complete a design
+                        study, or write a visualization survey paper. One student group (n=2) opted to conduct a replication study of the computational evaluation by Matuszewski et al. 1999 that compares heuristics for crossing minimization in layered networks. In Case Study 2,the student chose the paper due its significance in the field as well as opportunity to generate the missing procedures and data for the community. One student in the group was an advanced student with expertise in network visualization. The students implemented all heuristics examined by Matuszewski and recreated the datasets used as the originals were all lost. The study results were mostly consistent with Matuszewski et al. 1999, even when extended to larger networks. This replication is currently being prepared for submission to a peer reviewed journal.
+                    </p>
+
+                </div>     
+        
+    </section>
+
+
+    <!-- Section 5: Data Analysis -->  
+    <section id="analysis" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Important Links</h2> 
+
+            <a  class="osf" href="https://osf.io/h2qfn" style="color:white; padding: 3.5% 22.5% 0% 23.2%"> 
+                <button type="button" class="btn btn-dark btn btn-secondary btn-lg btn-block" style="font-size:1.2em; margin-top: 2px; width: 50%; margin-left: 417px;">OSF PREPRINT LINK TO DOWNLOAD THE PAPER AND SUPPLEMENTAL MATERIALS</button> </a> 
+
+            <a  class="osf" href="https://osf.io/ncb6d/" style="color:white; padding: 3.5% 22.5% 0% 23.2%"> 
+                    <button type="button" class="btn btn-dark btn btn-secondary btn-lg btn-block" style="font-size:1.2em; margin-top: 2px; width: 50%; margin-left: 417px; margin-bottom: 20px;">LINK TO OSF PROJECT</button> </a>            
+        </div>
+    </section>
+
+
+
+    <article>
+  
+        <hr class="sep-3" style="margin-top:50px; margin-bottom:40px;"/>
+         
+       </article>
+
+    <!-- Section 6: Design Process 
+    <section id="design" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Team & Contact </h2> 
+        </div>
+                
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="uzm.JPG" alt="Uzma" style="width:100%">
+                <div class="container">
+                  <p style="font-weight: bold; font-size: 20px; text-align: center;">Uzma Haque Syeda</p>
+                  <p class="title" style="text-align: center;">PhD Candidate</p>
+                  <p><a href="https://uzma0804.github.io/syeda/"><button class="button">Contact</button></a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="laura.jpg" alt="Laura" style="width:100%">
+                    <div class="container">
+                      <p style="font-weight: bold; font-size: 20px; text-align: center;">Laura South</p>
+                      <p class="title" style="text-align: center;">PhD</p>
+                      <p><a href="https://laurasouth.com/"><button class="button">Contact</button></a></p>
+                    </div>
+                  </div>
+                </div>
+    </section>
+--> 
+
+ 
+
+
+<section>
+
+    <footer style="background-color:#000000d0; height:50px; margin-top:100px;">
+        <p style="font-size:1em; color:#ffffffe5; text-align:center; font-weight:bold; margin-top:0px;"> This work was supported in part by the Khoury College of Computer Sciences at Northeastern University.</p>
+    </footer>
+   
+</section> 
+
+   
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

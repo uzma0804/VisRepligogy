@@ -1,0 +1,151 @@
+/* Styling the Body and text fonts*/
+body {
+    background:white;
+    font-family: "Nunito", sans-serif;
+    
+}
+
+/* Styling the Navbar*/
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color:  #000000;
+    font-size:1.3rem;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+#mainNavbar.navbar.scrolled .nav-link{
+    color:white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: ;
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+#mainNavbar .navbar-brand {
+    color: #373A36;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background: #000000d5;
+    transition: background 300ms;
+
+}
+
+/* Adjusting the anchors to each sections so that the header is not hidden by the navbar. Try commenting the code below this specific comment to see how the section
+header gets hidden by the navbar*/
+
+#motivation, #data, #task, #analysis, #design, #visualization {
+    scroll-margin-top: 100px;
+  }
+
+
+
+/*Copied from test.css example*/
+  #vis1 {
+    margin: auto;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #vis2 {
+    margin: auto;
+    width: 70%;
+    background-color: rgb(255, 254, 254);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  hr.sep-3 {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, #f0f0f0, #4039393b, #f0f0f0);
+  }
+  hr.sep-3::after {
+    content: '♕';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    padding: 0.6rem;
+    background-color:white ;
+    color:#061d1d;
+  }
+  
+ 
+  
+  a {
+    color: rgb(24, 63, 102);
+  }
+
+ /* Three columns side by side */
+.column {
+    float: left;
+    width: 15%;
+    margin-bottom: 16px;
+    margin-left: 300px;
+    margin-top: 50px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  } 
